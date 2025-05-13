@@ -1,116 +1,57 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top Up Games</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Up Game - OverYourLimits</title>
   <style>
     body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #000;
-      color: #fff;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    header, footer {
       text-align: center;
-    }
-    header {
+      padding: 1rem;
       background-color: #111;
-      padding: 20px;
     }
-    header img {
-      height: 100px;
+    .container {
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
     }
-    h1 {
-      margin-top: 0;
-    }
-    .content {
-      padding: 40px 20px;
-    }
-    .topup-form {
-      max-width: 400px;
-      margin: 0 auto;
-      background-color: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
+    .card {
+      background-color: #1e2a38;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      margin-bottom: 2rem;
     }
     input, select, button {
       width: 100%;
-      padding: 10px;
-      margin: 10px 0;
+      padding: 1rem;
+      margin-top: 1rem;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
     }
     button {
-      background-color: red;
+      background-color: #00c6ff;
       color: white;
-      font-weight: bold;
       cursor: pointer;
+      transition: background 0.3s;
     }
-    .history, .admin-panel {
-      max-width: 600px;
-      margin: 40px auto;
-      background-color: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: left;
+    button:hover {
+      background-color: #007acc;
     }
-    footer {
-      margin-top: 40px;
-      color: #777;
+    .status {
+      font-size: 1.2rem;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+      text-align: center;
     }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="logo.png" alt="Game Over Logo">
-    <h1>Top Up Game Favoritmu</h1>
-  </header>
-
-  <div class="content">
-    <div class="topup-form">
-      <h2>Form Top Up</h2>
-      <input type="text" placeholder="Masukkan ID Pemain">
-      <select>
-        <option>Pilih Game</option>
-        <option>Mobile Legends</option>
-        <option>Free Fire</option>
-        <option>PUBG</option>
-        <option>Genshin Impact</option>
-      </select>
-      <select>
-        <option>Pilih Nominal</option>
-        <option>50 Diamonds</option>
-        <option>100 Diamonds</option>
-        <option>200 Diamonds</option>
-      </select>
-      <select>
-        <option>Metode Pembayaran</option>
-        <option>OVO</option>
-        <option>DANA</option>
-        <option>Gopay</option>
-        <option>Transfer Bank</option>
-      </select>
-      <button>Top Up Sekarang</button>
-    </div>
-
-    <div class="history">
-      <h2>Riwayat Transaksi</h2>
-      <ul>
-        <li>12/05/2025 - Mobile Legends - 100 Diamonds - OVO</li>
-        <li>10/05/2025 - Free Fire - 50 Diamonds - DANA</li>
-      </ul>
-    </div>
-
-    <div class="admin-panel">
-      <h2>Panel Admin</h2>
-      <p>Total Transaksi Hari Ini: 5</p>
-      <p>Jumlah Pengguna Terdaftar: 120</p>
-      <p>Status Server: <strong style="color:lime;">Online</strong></p>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Top Up Game. All rights reserved.
-  </footer>
-</body>
-</html>
+    .success {
+      background-color: #28a745;
+    }
+    .failed {
